@@ -1,0 +1,21 @@
+from math import sqrt
+print('Это программа для поиска квадратных корней')
+choice = input('Хотите начать да\нет?')
+choice = choice.lower()
+while True:
+    if choice == 'да' or choice == 'lf':
+        print('Введите число квадратный корень которого необходимо расчитать')
+        while True:
+            text = input()
+            try:
+                text = int(text)
+                break
+            except:
+                print('Используйте только цифры!')
+        question = sqrt(text)
+        print(question)
+        choice = input('Есть ещё числа да\нет?')
+        choice = choice.lower()
+    else:
+        print('До новых встреч!:smile:')
+        break
