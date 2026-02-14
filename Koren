@@ -17,5 +17,5 @@ while True:
         choice = input('Есть ещё числа да\нет?')
         choice = choice.lower()
     else:
-        print('До новых встреч!:smile:')
+        print('До новых встреч!')
         break
